@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'platzi-store-in-angular';
+  title = 'Alfredo';
+  items = ['Alfredo', 'Ixchel', 'Porfirio'];
+  addItem():void {
+    this.items.push('nuevo item');
+  }
+  deleteItem(index: number): void {
+    this.items.splice(index, 1)
+  }
 }
