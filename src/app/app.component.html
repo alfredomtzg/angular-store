@@ -14,7 +14,7 @@
     <button (click)="deleteItem(i)">Delete</button>
   </li>
 </ul>
-<div *ngFor="let product of products">
+<div class="container" *ngFor="let product of products">
   {{product.title}}
   {{product.price}}
   <img [src]="product.image" alt="">
