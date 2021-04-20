@@ -4,11 +4,14 @@
 <div *ngIf=" title === 'Alfredo' ">
   este es no es un div
 </div>
+
+
 <div [ngSwitch]="title" >
-  <p *ngSwitchCase="'alfredo'" >alfredo</p>
-  <p *ngSwitchCase="'ixchel'" >ixchel</p>
-  <p *ngSwitchCase="'maritza'" >maritza</p>
-  <p *ngSwitchCase="'porfirio'" >porfirio</p>
+  <p *ngSwitchCase="'alfredo'" > este es alfredo</p>
+  <p *ngSwitchCase="'ixchel'" > este es ixchel</p>
+  <p *ngSwitchCase="'maritza'" > este es maritza</p>
+  <p *ngSwitchCase="'porfirio'" > este es porfirio</p>
+  <p *ngSwitchDefault >No match</p>
 
 </div>
 
@@ -22,7 +25,5 @@
   </li>
 </ul>
 <div class="container" *ngFor="let product of products">
-  {{product.title}}
-  {{product.price}}
-  <img [src]="product.image" alt="">
+  <app-product (productAddCart)="clickProduct($event)" [product]="product" ></app-product>
 </div>
