@@ -1,6 +1,9 @@
 <input type="text" [(ngModel)]="title">
 {{title}}
 
+<input type="text" [(ngModel)]="power">
+{{power |exponential}}
+
 <div *ngIf=" title === 'Alfredo' ">
   este es no es un div
 </div>
