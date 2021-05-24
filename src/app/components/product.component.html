@@ -1,4 +1,4 @@
-<h3>{{ product.title | uppercase }}</h3>
+<h3 appHighlight>{{ product.title | uppercase }}</h3>
 <img [src]="product.image" [alt]="product.title" />
 <strong>{{ product.price | currency }}</strong>
 <p>{{ product.description | slice: 0:11 }}</p>
