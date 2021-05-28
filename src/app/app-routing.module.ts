@@ -3,9 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { DemoComponent } from './demo/demo.component';
 import { HomeComponent } from './home/home.component';
+import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
 import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+    
+  },
   {
     path : 'home',
     component: HomeComponent
@@ -21,6 +28,10 @@ const routes: Routes = [
   {
     path : 'demo',
     component: DemoComponent
+  },
+  {
+    path: '**',
+    component: PageNotfoundComponent
   }
 ];
 
