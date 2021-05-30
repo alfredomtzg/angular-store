@@ -1,1 +1,10 @@
-<p>product-detail works!</p>
+<div>
+  <img [src]="product.image" [alt]="product.title">
+</div>
+<div>
+  <ul>
+    <li>Nombre: {{product.title}} </li>
+    <li>Precio: {{product.price | currency}}</li>
+  </ul>
+  <p> {{product.description}} </p>
+</div>
