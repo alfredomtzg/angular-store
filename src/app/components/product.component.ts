@@ -32,13 +32,13 @@ export class ProductComponent implements OnInit, DoCheck, OnDestroy {
   //   console.log(change);
   // }
   ngOnInit() {
-    console.log('3. OnInit');
+    // console.log('3. OnInit');
   }
   ngDoCheck() {
-    console.log('4. DoCheck');
+    // console.log('4. DoCheck');
   }
   ngOnDestroy(){
-    console.log('5. OnDestroy');
+    // console.log('5. OnDestroy');
     
   }
 
