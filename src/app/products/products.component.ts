@@ -4,18 +4,15 @@ import { ProductsService } from '../products.service';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.scss']
+  styleUrls: ['./products.component.scss'],
 })
 export class ProductsComponent implements OnInit {
+  products = [];
 
-  products= [];
-  
-  constructor(
-    private productsService: ProductsService
-  ) { }
+  constructor(private productsService: ProductsService) {}
 
   ngOnInit(): void {
-   this.getAllProducts();
+    this.getAllProducts();
   }
 
   getAllProducts(): void {
@@ -25,5 +22,4 @@ export class ProductsComponent implements OnInit {
   clickProduct(id: number) {
     console.log(id);
   }
-
 }
