@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-* {
-  margin: 0px;
-  padding: 0px;
-}
+// * {
+//   margin: 0px;
+//   padding: 0px;
+// }
 .list-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -12,3 +12,5 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
