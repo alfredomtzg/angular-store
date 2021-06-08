@@ -8,6 +8,5 @@ import { HomeRoutingModule } from './home-routing.module';
 @NgModule({
   declarations: [BannerComponent, HomeComponent],
   imports: [SharedModule, CommonModule, HomeRoutingModule ],
-  // exports: [BannerComponent, HomeComponent]
 })
 export class HomeModule {}
