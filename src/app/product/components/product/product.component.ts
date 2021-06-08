@@ -3,8 +3,6 @@ import {
   Input,
   Output,
   EventEmitter,
-  OnChanges,
-  SimpleChange,
   OnInit,
   DoCheck,
   OnDestroy
@@ -18,7 +16,7 @@ import { Product } from '../../../product.model';
 })
 export class ProductComponent implements OnInit, DoCheck, OnDestroy {
   @Input() product: Product;
-  @Output() productAddCart: EventEmitter<number> = new EventEmitter();
+  @Output() productAddCart: EventEmitter<string> = new EventEmitter();
 
   today = new Date();
 
