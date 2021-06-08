@@ -6,10 +6,26 @@
 .list-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  gap: 50px 20px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 @media (min-width: 576px) {
   .list-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .container {
+    max-width: 1110px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 html, body { height: 100%; }

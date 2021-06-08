@@ -1,9 +1,31 @@
-<h3 appHighlight>{{ product.title | uppercase }}</h3>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title> {{ product.title | uppercase }} </mat-card-title>
+    <mat-card-subtitle> {{ product.price | currency }} </mat-card-subtitle>
+  </mat-card-header>
+  <div class="crop-image">
+    <img [src]="product.image" [alt]="product.title" />
+  </div>
+  <mat-card-content>
+    <p>{{ product.description | slice: 0:11 }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="addCart()">
+      Agregar al carrito
+    </button>
+    <a mat-raised-button [routerLink]="['/products', product.id]">
+      Ver Detalle</a
+    >
+  </mat-card-actions>
+</mat-card>
+<!-- <h3 appHighlight>{{ product.title | uppercase }}</h3>
 <img [src]="product.image" [alt]="product.title" />
 <strong>{{ product.price | currency }}</strong>
 <p>{{ product.description | slice: 0:11 }}</p>
 <p>{{ today }}</p>
 <p>{{ today | date: "short" }}</p>
 <p>{{ today | date: "medium " }}</p>
-<button mat-raised-button color="primary" (click)="addCart()">Agregar al carrito</button>
-<a [routerLink]="['/products', product.id]"> Ver Detalle</a>
+<button mat-raised-button color="primary" (click)="addCart()">
+  Agregar al carrito
+</button>
+<a [routerLink]="['/products', product.id]"> Ver Detalle</a> -->
