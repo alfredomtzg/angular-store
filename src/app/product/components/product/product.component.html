@@ -5,5 +5,5 @@
 <p>{{ today }}</p>
 <p>{{ today | date: "short" }}</p>
 <p>{{ today | date: "medium " }}</p>
-<button (click)="addCart()">Agregar al carrito</button>
+<button mat-raised-button color="primary" (click)="addCart()">Agregar al carrito</button>
 <a [routerLink]="['/products', product.id]"> Ver Detalle</a>
