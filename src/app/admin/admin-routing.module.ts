@@ -39,7 +39,7 @@ const routes: Routes = [
         component: ProductsListComponent,
       },
       {
-        path: 'products-create',
+        path: 'products/create',
         component: FormProductComponent,
       },
     ],
