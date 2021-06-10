@@ -18,6 +18,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTreeModule } from '@angular/material/tree';
+import { MatStepperModule } from '@angular/material/stepper';
 
 import { LayoutModule } from '@angular/cdk/layout';
 import { DragDropModule } from '@angular/cdk/drag-drop';
@@ -40,6 +41,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatTableModule,
     MatButtonModule,
     MatSelectModule,
+    MatStepperModule,
     MatToolbarModule,
     MatSidenavModule,
     MatGridListModule,
@@ -61,6 +63,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatTableModule,
     MatSelectModule,
     MatButtonModule,
+    MatStepperModule,
     MatSidenavModule,
     MatToolbarModule,
     MatGridListModule,
@@ -68,4 +71,4 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatFormFieldModule,
   ],
 })
-export class MaterialModule {}
+export class MaterialModule { }
