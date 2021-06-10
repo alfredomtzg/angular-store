@@ -12,6 +12,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { GragDropComponent } from './components/grag-drop/grag-drop.component';
 import { ProductsListComponent } from './components/products-list/products-list.component';
 import { FormProductComponent } from './components/form-product/form-product.component';
+import { EditFormProductComponent } from './components/edit-form-product/edit-form-product.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormProductComponent } from './components/form-product/form-product.com
     GragDropComponent,
     ProductsListComponent,
     FormProductComponent,
+    EditFormProductComponent,
   ],
   imports: [
     CommonModule,

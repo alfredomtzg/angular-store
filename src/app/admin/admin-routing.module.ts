@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { EditFormProductComponent } from './components/edit-form-product/edit-form-product.component';
 import { FormProductComponent } from './components/form-product/form-product.component';
 import { GragDropComponent } from './components/grag-drop/grag-drop.component';
 import { NavComponent } from './components/nav/nav.component';
@@ -41,6 +42,10 @@ const routes: Routes = [
       {
         path: 'products/create',
         component: FormProductComponent,
+      },
+      {
+        path: 'products/edit/:id',
+        component: EditFormProductComponent,
       },
     ],
   },
