@@ -24,11 +24,12 @@ import { TreeComponent } from './components/tree/tree.component';
 import { MatTreeModule } from '@angular/material/tree';
 import { GragDropComponent } from './components/grag-drop/grag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { ProductsListComponent } from './components/products-list/products-list.component';
 
 
 
 @NgModule({
-  declarations: [ProductFormComponent, NavComponent, TableComponent, DashboardComponent, TreeComponent, GragDropComponent],
+  declarations: [ProductFormComponent, NavComponent, TableComponent, DashboardComponent, TreeComponent, GragDropComponent, ProductsListComponent],
   imports: [
     CommonModule,
     MaterialModule,
