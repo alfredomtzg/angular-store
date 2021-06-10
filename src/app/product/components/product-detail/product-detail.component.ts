@@ -35,5 +35,38 @@ export class ProductDetailComponent implements OnInit {
     })
   }
 
+  createProduct(){
+    const newProduct: Product = {
+      id: '222',
+      title: ' nuevo desde angular',
+      image: 'https://picsum.photos/200/300',
+      price: 3000,
+      description: 'desde México'
+    }
+    this.productsService.createProduct(newProduct)
+    .subscribe(product => {
+      console.log(product);
+    })
+
+  }
+
+  updateProduct() {
+    const updateProduct: Partial<Product> = {
+      image: 'https://picsum.photos/500/700',
+      price: 3000,
+      description: 'Edición images update'
+    }
+    this.productsService.updateProduct('222', updateProduct)
+    .subscribe(product => {
+      console.log(product);
+    })
+  }
+
+  deleteProduct() {
+    this.productsService.deleteProduct('222')
+    .subscribe(product => {
+      console.log(product);
+    })
+  }
 
 }
