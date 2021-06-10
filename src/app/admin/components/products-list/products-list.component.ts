@@ -24,7 +24,6 @@ export class ProductsListComponent implements OnInit {
   deleteProduct(id: string) {
     this.productsService.deleteProduct(id).subscribe((response) => {
       console.log(response);
-      // this.fetchProducts();
       this.products = this.products.filter(item => item.id !== id)
     });
   }
