@@ -6,12 +6,10 @@ import { ProductFormComponent } from './components/product-form/product-form.com
 import { MaterialModule } from '../material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavComponent } from './components/nav/nav.component';
-import { LayoutModule } from '@angular/cdk/layout';
 import { TableComponent } from './components/table/table.component';
 import { TreeComponent } from './components/tree/tree.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { GragDropComponent } from './components/grag-drop/grag-drop.component';
-import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ProductsListComponent } from './components/products-list/products-list.component';
 
 @NgModule({
@@ -29,8 +27,6 @@ import { ProductsListComponent } from './components/products-list/products-list.
     MaterialModule,
     ReactiveFormsModule,
     AdminRoutingModule,
-    LayoutModule,
-    DragDropModule,
   ],
 })
 export class AdminModule {}

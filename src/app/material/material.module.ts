@@ -19,10 +19,14 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTreeModule } from '@angular/material/tree';
 
+import { LayoutModule } from '@angular/cdk/layout';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
+    LayoutModule,
     MatIconModule,
     MatCardModule,
     MatMenuModule,
@@ -30,6 +34,7 @@ import { MatTreeModule } from '@angular/material/tree';
     MatSortModule,
     MatListModule,
     MatBadgeModule,
+    DragDropModule,
     MatInputModule,
     MatRadioModule,
     MatTableModule,
@@ -42,6 +47,7 @@ import { MatTreeModule } from '@angular/material/tree';
     MatFormFieldModule,
   ],
   exports: [
+    LayoutModule,
     MatCardModule,
     MatListModule,
     MatMenuModule,
@@ -49,6 +55,7 @@ import { MatTreeModule } from '@angular/material/tree';
     MatSortModule,
     MatIconModule,
     MatBadgeModule,
+    DragDropModule,
     MatInputModule,
     MatRadioModule,
     MatTableModule,
