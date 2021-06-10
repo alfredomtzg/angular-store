@@ -11,8 +11,9 @@ export class FooterComponent implements OnInit {
 
   constructor() {
     this.emailInput = new FormControl('', [
+      Validators.required,
+      Validators.email,
       Validators.minLength(4),
-      Validators.maxLength(10),
     ]);
   }
 
@@ -21,5 +22,12 @@ export class FooterComponent implements OnInit {
   registerMail(){
     console.log(this.emailInput.value);
     
+  }
+  getErrorMessage() {
+    if (this.emailInput.hasError('required')) {
+      return 'You must enter a value';
+    }
+
+    return this.emailInput.hasError('email') ? 'Not a valid email' : '';
   }
 }

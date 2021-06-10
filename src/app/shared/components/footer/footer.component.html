@@ -42,6 +42,10 @@
               placeholder="Su correo"
               type="email"
             />
+            
+            <mat-error *ngIf="emailInput.invalid">{{
+              getErrorMessage()
+            }}</mat-error>
           </mat-form-field>
           <button
             (click)="registerMail()"
