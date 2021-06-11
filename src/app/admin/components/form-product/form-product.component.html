@@ -18,6 +18,8 @@
       <mat-form-field>
         <textarea placeholder="Description" formControlName="description" matInput  ></textarea>
       </mat-form-field>
+      <img *ngIf="(image$ | async) as image" [src]="image" alt="Image product">
+      <input type="file" (change)="uploadFile($event)">
     </mat-card-content>
     <mat-card-actions>
       <button mat-raised-button type="submit" [disabled]="form.invalid" >Guardar</button>
